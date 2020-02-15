@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainHead.master.cs" Inherits="OnlineTeaching.MainHead" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1 style="text-align:center"> 武汉加油，我爱学习</h1>
+        
+            
+        <div id="shownamediv" runat="server" style="float:right">
+            <div style="float:right;margin-right:10px "><asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">退出</asp:LinkButton></div>
+            <div style="float:right;margin-right:10px "><asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">我的</asp:LinkButton></div>
+            <div style="float:right;margin-right:10px "><asp:Literal ID="Literal1" runat="server" ></asp:Literal></div>
+        </div>
+        <div id="logindiv" runat="server">
+                <div style="float:right;margin-right:10px "><asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">同学登录</asp:LinkButton></div>
+                <div style="float:right;margin-right:10px "><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">教师登录</asp:LinkButton></div>
+                <div style="float:right;margin-right:10px"> <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">去注册</asp:LinkButton></div>   
+        </div>
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
